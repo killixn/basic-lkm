@@ -1,0 +1,21 @@
+Basic LKM (Linux Kernel Module)
+
+Pedagogical project demonstrating basic syscalls hooks of a linux machine.
+This project explores kernel development concepts, including system
+call interception and process stealth. It mainly reuses the remarkable
+work of @Xcellerator, adapted for current Kernel versions.
+
+Usage:
+$ make
+$ sudo insmod rootkit.ko
+...
+$ kill -42 1
+$ sudo rmmod rootkit
+
+Full documentation and detailed code explanations are available at :
+
+    https://xcellerator.github.io/posts/linux_rootkits_01/
+
+For additional technical details, see:
+    *	docs/ directory in this repository
+    *	Linux kernel docs
